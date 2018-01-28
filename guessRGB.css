@@ -9,10 +9,13 @@ body {
 	padding-bottom: 30%;
 	float: left;
 	margin: 1.66%;
-	border-radius: 20%;
-	transition: background-color 0.6s;
-	-webkit-transition: background-color 0.6s;
-	-moz-transition: background-color 0.6s;
+	border-radius: 30%;
+	transition: 0.6s;
+	-webkit-transition: 0.6s;
+	-moz-transition: 0.6s;
+}
+.square:hover {
+	border-radius: 10%;
 }
 
 #container {
@@ -79,4 +82,30 @@ button {
 button:hover {
 	color: white;
 	background: steelblue;
+}
+
+#button {
+  position: fixed;
+  bottom: 5%;
+  right: 20%;
+}
+
+#button {
+    width: 6em;
+    /*border: 2px solid green;*/
+    background: #ffe;
+    border-radius: 5px;
+}
+a {
+    display: block;
+    width: 100%;
+    line-height: 2em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+a:hover {
+    color: white;
+    font-weight: bold;
+    background: #0aa07c;
 }

@@ -39,6 +39,7 @@ function setSquares()
 	{
 		squares[i].addEventListener("click", function(){
 			 clickedColor = this.style.backgroundColor;
+
 			if(pickedColor === clickedColor)
 			{
 				messageDisplay.textContent = "CORRECT!";
@@ -120,3 +121,4 @@ function randomColor()
 	var rgb = "rgb("+r+", "+g+", "+b+")";
 	return rgb;
 }
+

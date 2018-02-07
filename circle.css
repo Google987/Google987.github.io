@@ -1,0 +1,25 @@
+canvas[resize] {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+
+#pre {
+  position: fixed;
+  bottom: 5%;
+  left: 20%;
+  width: 6em;
+  /*border: 2px solid green;*/
+  background: #83caa7;
+ text-align: center;
+}
+
+#pre:hover {
+ background-color: white;
+}

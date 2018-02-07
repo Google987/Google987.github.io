@@ -109,18 +109,26 @@ hr.style-four {
     box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }
 
-#button {
+#pre {
   position: fixed;
   bottom: 5%;
   left: 20%;
+  width: 6em;
+  /*border: 2px solid green;*/
+  background: #83caa7;
+  border-radius: 40%;
 }
 
-#button {
-    width: 6em;
-    /*border: 2px solid green;*/
-    background: #83caa7;
-    border-radius: 40%;
+#next {
+  position: fixed;
+  bottom: 5%;
+  right: 20%;
+  width: 6em;
+  /*border: 2px solid green;*/
+  background: #ffe;
+  border-radius: 5px;
 }
+
 a {
     display: block;
     width: 100%;

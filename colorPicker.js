@@ -137,3 +137,46 @@ function changeAndCopy()
 	document.querySelector("#show").style.backgroundColor = clickedColor;
 	document.querySelector("#h1s").style.backgroundColor = clickedColor;
 }
+
+function showShades(el) {
+	document.querySelector("#shadeOptions").style.display = 'block';
+	document.querySelector("#randomOptions").style.display = 'none';
+	if(!el.classList.contains('selected')){
+		var selectedColorBtn = document.querySelector(".shadeColorBtn.selected");
+		selectedColorBtn.click();
+	}
+	el.classList.add("selected");
+	document.querySelector("#randomBtn").classList.remove("selected");
+}
+
+function hideShades(el) {
+	document.querySelector("#shadeOptions").style.display = 'none';
+	document.querySelector("#randomOptions").style.display = 'block';
+	if(!el.classList.contains("selected")){
+		reset();
+	}
+	el.classList.add("selected");
+	document.querySelector("#shadeBtn").classList.remove("selected");
+}
+
+function generateShades(r, g, b, count) {
+	var shadesArr = [];
+	var max = Math.max(r,Math.max(g,b));
+
+	var step = 255 / (max * count)
+	for (let i = count; i > 0; i--) 
+		shadesArr.push([r * step * i, g * step * i, b * step * i]);
+	return shadesArr;
+}
+
+function setNewColors(colors, thisEle=null) {
+	if(thisEle){
+		var elems = document.querySelectorAll(".shadeColorBtn");
+		for (var i = 0; i < elems.length; i++)
+			elems[i].classList.remove("selected");
+		thisEle.classList.add("selected");
+	}
+	for(var i = 0; i<squares.length; i++)
+		if(colors[i])
+			squares[i].style.backgroundColor = "rgb("+colors[i][0]+", "+colors[i][1]+", "+colors[i][2]+")";
+}

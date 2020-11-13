@@ -16,12 +16,23 @@
 		 <input type="text" id="fakeInput" readonly>
 		</h1>
 	</div>
-	
-	<div id="stripe">
+	<div class="stripe2">
+		<button id="randomBtn" class="selected" onclick="hideShades(this)">Random</button>
+		<button id="shadeBtn" onclick="showShades(this)">Shades</button>
+	</div>
+	<div class="stripe" id="randomOptions">
 		<button id="reset">New Colors</button>
 		<button id="random">Pick Randomly</button>
 	</div>
-	<div id="stripe2">
+	<div class="stripe" id="shadeOptions" style="display: none;">
+		<button class="shadeColorBtn selected" id="red" onclick="setNewColors(generateShades(255, 0, 0, 24), this)">Red</button>
+		<button class="shadeColorBtn" id="green" onclick="setNewColors(generateShades(0, 255, 0, 24), this)">Green</button>
+		<button class="shadeColorBtn" id="blue" onclick="setNewColors(generateShades(0, 0, 255, 24), this)">Blue</button>
+		<button class="shadeColorBtn" id="black" onclick="setNewColors(generateShades(255, 255, 255, 24), this)">Black</button>
+		<button class="shadeColorBtn" id="pink" onclick="setNewColors(generateShades(255, 0, 255, 24), this)">Pink</button>
+		<button class="shadeColorBtn" id="yellow" onclick="setNewColors(generateShades(255, 255, 0, 24), this)">Yellow</button>
+	</div>
+	<div class="stripe2">
 		<span id="click">Onclick copy-</span>
 		<button id="rgb">RGB</button>
 		<button id="hex" class="selected">HeX</button>
@@ -62,10 +73,6 @@
 
 <div id="pre"><a href="index.html">Previous</a></div>
 <div id="next"><a href="patatap.html">NeXt</a></div>
-
-	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
  <script type="text/javascript" src="colorPicker.js"></script> 	
     

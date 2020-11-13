@@ -27,35 +27,25 @@ font-family: 'Berkshire Swash', cursive;
 }
 
 
-#stripe {
+.stripe {
 	height: 30px;
 	background-color: #dcdcdc;
 	text-align: center;
 	margin: 0;
 }
-
+.stripe2 {
+	margin: 5px 0;
+}
 .selected {
 	color: white;
 	background: #52702b;
 }
 
-#reset {
-	outline: none;
-}
-#random{
-	outline: none;
-}
-#hex {
-	outline: none;
-}
-#rgb {
-	outline: none;
-}
-
 button {
 	border: none;
+	outline: none !important;
 	background: none;
-	border-radius: 10%;
+	border-radius: 3px;
 	height: 100%;
 	text-transform: uppercase;
 	font-family: "Montserrat", "Avenir";

@@ -1,46 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Guess Color</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-	<link rel="stylesheet" type="text/css" href="guessRGB.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Projects</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-		<h1>My RBG color game
-			<br>
-		 <span id="rgbDisplay"></span>
-		</h1>
-		<!-- <h1 id="rgbDisplay"></h1> -->
-	
-	<div id="stripe">
-		<button id="reset">New Colors</button>
-		<span id="message"></span>
-		<button class="mode">Easy</button>
-		<button class="mode selected">Hard</button>
-	</div>
+    <div class="container">
+        <div class="row">
+            <a href="8-puzzle-game/src/index.html" class="button-5" role="button" target="yourFrame">8 Puzzle</a>
+            <a href="chessBoard/index.html" class="button-5" role="button" target="yourFrame">Chess Board</a>
+            <a href="color-picker/colorPicker.html" class="button-5" role="button" target="yourFrame">Color Picker</a>
+            <a href="patatap/patatap.html" class="button-5" role="button" target="yourFrame">Patatap</a>
+            <a href="RGB-game/index.html" class="button-5" role="button" target="yourFrame">RGB Game</a>
+            <a href="tic-tac-toe/ticTacToe.html" class="button-5" role="button" target="yourFrame">Tic Tac Toe</a>
+            <a href="sudoku/index.html" class="button-5" role="button" target="yourFrame">Sudoku</a>
+        </div>
 
-	<div id="container">
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-	</div>
+        <div class="social-menu">
+            <ul>
+                <li><a href="https://www.youtube.com/alittlecoding/" target="blank"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li><a href="https://www.twitter.com/beyou7060/" target="blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/beyou7060/" target="blank"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li><a href="https://github.com/Google987/" target="blank"><i class="fab fa-github"></i></i></a></li>
+                <li><a href="https://www.codepen.io/google987/" target="blank"><i class="fab fa-codepen"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/arif-khan-7410/" target="blank"><i
+                            class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.facebook.com/alittlecoding/" target="blank"><i class="fab fa-facebook"></i></a>
+                </li>
+            </ul>
+        </div>
+        <iframe id="myFrame" name="yourFrame" src="8-puzzle-game/src/index.html" onload="this.contentWindow.focus()" />
 
-<div id="button"><a href="colorPicker.html">NExT</a></div>
-<div id="button" style="left: 20%;"><a href="chessBoard/index.html">Chess Board</a></div>
-<div><a href="8-puzzle-game/src/index.html" class="btn btn-primary" style="position: fixed; bottom: 0; right: 0; width: fit-content;">
-	8 Puzzle</a></div>
-
-	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-
-	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
- 	<script type="text/javascript" src="guessRGB.js"></script>
-
+    </div>
 </body>
+
 </html>

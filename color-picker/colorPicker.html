@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head> 
+
+<head>
 	<title>The awesomest color picker</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Risque" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="colorPicker.css">
 </head>
+
 <body>
-		<div id="h1s">
-			<h1>the awesomest color PIcKER</h1>
-			<br>
-		 <input type="text" id="hexDisplay" readonly>
-		 <input type="text" id="fakeInput" readonly>
+	<div id="h1s">
+		<h1>the awesomest color PIcKER</h1>
+		<br>
+		<input type="text" id="hexDisplay" readonly>
+		<input type="text" id="fakeInput" readonly>
 		</h1>
 	</div>
 	<div class="stripe2">
@@ -25,12 +28,18 @@
 		<button id="random">Pick Randomly</button>
 	</div>
 	<div class="stripe" id="shadeOptions" style="display: none;">
-		<button class="shadeColorBtn selected" id="red" onclick="setNewColors(generateShades(255, 0, 0, 24), this)">Red</button>
-		<button class="shadeColorBtn" id="green" onclick="setNewColors(generateShades(0, 255, 0, 24), this)">Green</button>
-		<button class="shadeColorBtn" id="blue" onclick="setNewColors(generateShades(0, 0, 255, 24), this)">Blue</button>
-		<button class="shadeColorBtn" id="black" onclick="setNewColors(generateShades(255, 255, 255, 24), this)">Black</button>
-		<button class="shadeColorBtn" id="pink" onclick="setNewColors(generateShades(255, 0, 255, 24), this)">Pink</button>
-		<button class="shadeColorBtn" id="yellow" onclick="setNewColors(generateShades(255, 255, 0, 24), this)">Yellow</button>
+		<button class="shadeColorBtn selected" id="red"
+			onclick="setNewColors(generateShades(255, 0, 0, 24), this)">Red</button>
+		<button class="shadeColorBtn" id="green"
+			onclick="setNewColors(generateShades(0, 255, 0, 24), this)">Green</button>
+		<button class="shadeColorBtn" id="blue"
+			onclick="setNewColors(generateShades(0, 0, 255, 24), this)">Blue</button>
+		<button class="shadeColorBtn" id="black"
+			onclick="setNewColors(generateShades(255, 255, 255, 24), this)">Black</button>
+		<button class="shadeColorBtn" id="pink"
+			onclick="setNewColors(generateShades(255, 0, 255, 24), this)">Pink</button>
+		<button class="shadeColorBtn" id="yellow"
+			onclick="setNewColors(generateShades(255, 255, 0, 24), this)">Yellow</button>
 	</div>
 	<div class="stripe2">
 		<span id="click">Onclick copy-</span>
@@ -38,7 +47,7 @@
 		<button id="hex" class="selected">HeX</button>
 	</div>
 	<div id="show"></div>
-    <hr class="style-four">
+	<hr class="style-four">
 	<div id="container">
 		<div class="square"></div>
 		<div class="square"></div>
@@ -69,12 +78,10 @@
 		<div class="fake"></div>
 		<div class="fake"></div>
 		<div class="fake"></div>
-	</div> 
+	</div>
 
-<div id="pre"><a href="index.html">Previous</a></div>
-<div id="next"><a href="patatap.html">NeXt</a></div>
+	<script type="text/javascript" src="colorPicker.js"></script>
 
- <script type="text/javascript" src="colorPicker.js"></script> 	
-    
 </body>
+
 </html>

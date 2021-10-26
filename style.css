@@ -126,3 +126,24 @@
 .social-menu ul li:nth-child(7) a:hover{
   background-color: #3b5998;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .container{ 
+    width: 100%; 
+  }
+  .row{
+    display: block;
+  }
+  .social-menu ul li a{
+    width: 35px;
+    height: 35px;
+  }
+  .social-menu ul li .fab{
+    font-size: 20px;
+    line-height: 38px;
+  }
+  .social-menu ul{
+    left: 25px;
+  }
+}

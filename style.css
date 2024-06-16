@@ -115,15 +115,18 @@
   background-color: #E4405F;
 }
 .social-menu ul li:nth-child(4) a:hover{
-  background-color: rgba(0, 0, 0, 0.829);
+  background-color: #e7a41e;
 }
 .social-menu ul li:nth-child(5) a:hover{
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.829);
 }
 .social-menu ul li:nth-child(6) a:hover{
-  background-color: #0077b5;
+  background-color: #000;
 }
 .social-menu ul li:nth-child(7) a:hover{
+  background-color: #0077b5;
+}
+.social-menu ul li:nth-child(8) a:hover{
   background-color: #3b5998;
 }
 
